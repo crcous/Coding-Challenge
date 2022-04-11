@@ -19,12 +19,12 @@ return sum
 // var freqArray = ['a', 'b', 'c', 'a', 'b', 'c', 'a', 'a', 'd'];
 
 
-findFrequency = function (freqArray) {
-const counts = {};
+findFrequency = function (array) {
+const counts = '';
 
-    for (const num of freqArray) {
-    counts[num] = counts[num] ? counts[num] + 1 : 1
-    };
+//     for (const num of array) {
+//     counts[num] = counts[num] ? counts[num] + 1 : 1
+//     };
 
 //     for (const property in counts) {
       
