@@ -9,7 +9,7 @@ for (let i = 0; i < array.length; i++) {
 return sum
 };
 
-findSum([10, 234, 356, 5, 3, 1, 3, 4]);
+findSum();
 
 
 
@@ -50,7 +50,7 @@ var isPalindrome = function (str) {
     } 
 };
 
-isPalindrome('ana');
+isPalindrome();
 
 
 // var pairArray = [234, 32, 15, 344, 15, 34, 134, 2];
@@ -66,7 +66,7 @@ let largestPair = function (array) {
     // console.log(maxProduct)
     return maxProduct;
 };
-largestPair([234, 32, 15, 344, 15, 34, 134, 2]); 
+largestPair(); 
 
 
 
@@ -81,7 +81,7 @@ let removeParenth = function (str) {
     return finString;
 }
 
-removeParenth('i(donot)wanttobeadeveloper');
+removeParenth();
 
 
 
@@ -126,4 +126,4 @@ for (i = 0; i < word.length; i++) {
 return (sum*1);
 }
 
-scoreScrabble('caziques');
+scoreScrabble();
