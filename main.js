@@ -72,7 +72,7 @@ let largestPair = function (array) {
 
 
 
-var string = 'i(donot)wanttobeadeveloper';
+// var string = 'i(donot)wanttobeadeveloper';
 
 let removeParenth = function (str) {
     var parenthArray = str.replace(/\(.*?\)/g, '').split(/\s+/, 5);
@@ -88,7 +88,7 @@ let removeParenth = function (str) {
 // var scrabbleWord = 'caziques';
 
 let scoreScrabble = function (str) {
-    var word = scrabbleWord.split('');
+    var word = str.split('');
 let newAlphabet = { a: '1',
   e: '1',
   i: '1',
