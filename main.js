@@ -1,11 +1,11 @@
-// var sumArray = [10, 234, 356, 5, 3, 1, 3, 4];
+
 
 var findSum = function (array) {
 let sum = 0
 for (let i = 0; i < array.length; i++) {
     sum += array[i];
 };
-// console.log(sum);
+
 return sum
 };
 
@@ -16,19 +16,13 @@ return sum
 
 
 
-// var freqArray = ['a', 'b', 'c', 'a', 'b', 'c', 'a', 'a', 'd'];
+
 
 
 findFrequency = function (array) {
 const counts = '';
 
-//     for (const num of array) {
-//     counts[num] = counts[num] ? counts[num] + 1 : 1
-//     };
 
-//     for (const property in counts) {
-      
-//     };
     return counts
 };
 
@@ -39,10 +33,10 @@ const counts = '';
 var isPalindrome = function (str) {
     var palReverse = str.split('').reverse().join('');
     if (str === palReverse) {
-        // console.log('true');
+        
         return 'true'
     } else if (str !== palReverse) {
-        // console.log('false');
+        
         return 'false'
     } 
 };
@@ -50,7 +44,7 @@ var isPalindrome = function (str) {
 
 
 
-// var pairArray = [234, 32, 15, 344, 15, 34, 134, 2];
+
  
 let largestPair = function (array) {
     var maxProduct = array[0] * array[1];
@@ -60,7 +54,6 @@ let largestPair = function (array) {
             maxProduct = product;
         }
     };
-    // console.log(maxProduct)
     return maxProduct;
 };
  
@@ -69,12 +62,12 @@ let largestPair = function (array) {
 
 
 
-// var string = 'i(donot)wanttobeadeveloper';
+
 
 let removeParenth = function (str) {
     var parenthArray = str.replace(/\(.*?\)/g, '').split(/\s+/, 5);
     var finString = parenthArray.toString();
-    // console.log(finString)
+   
     return finString;
 }
 
@@ -82,7 +75,7 @@ let removeParenth = function (str) {
 
 
 
-// var scrabbleWord = 'caziques';
+
 
 let scoreScrabble = function (str) {
     var word = str.split('');
@@ -119,7 +112,7 @@ for (i = 0; i < word.length; i++) {
     letter = word[i];
     sum += parseInt(newAlphabet[letter]);
 }
-// console.log(sum*1);
+
 return (sum*1);
 }
 
