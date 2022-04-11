@@ -49,9 +49,6 @@ var isPalindrome = function () {
     } 
 };
 
-console.log(pal);
-console.log(palReverse);
-
 isPalindrome();
 
 
