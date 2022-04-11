@@ -1,9 +1,11 @@
 var sumArray = [2, 4, 6];
 
 var findSum = function (sumArray) {
-return sumArray[0] + sumArray[1] + sumArray[2];
-}
-
+for (let i = 0; i < sumArray.length; i++) {
+    sum += sumArray[i];
+};
+    return sum
+};
 
 var sum = findSum(sumArray);
 
