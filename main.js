@@ -1,38 +1,38 @@
 var sumArray = [2, 4, 6];
 
 var findSum = function (sumArray) {
+let sum = 0
 for (let i = 0; i < sumArray.length; i++) {
     sum += sumArray[i];
 };
     return sum
 };
 
-var sum = findSum(sumArray);
 
-console.log(sum);
-
+console.log(findSum(sumArray));
 
 
 
-var freqArray = ['a', 'b', 'c', 'a', 'b', 'c', 'a', 'a', 'd'];
+
+// var freqArray = ['a', 'b', 'c', 'a', 'b', 'c', 'a', 'a', 'd'];
 
 
-findFrequency = function (freqArray) {
-const counts = {};
+// findFrequency = function (freqArray) {
+// const counts = {};
 
-    for (const num of freqArray) {
-    counts[num] = counts[num] ? counts[num] + 1 : 1
-    };
+//     for (const num of freqArray) {
+//     counts[num] = counts[num] ? counts[num] + 1 : 1
+//     };
     
-    var most = property
-    var least = property
+//     var most = property
+//     var least = property
 
-    for (const property in counts) {
+//     for (const property in counts) {
       
-    };
-    return counts
-};
-console.log(findFrequency(freqArray));
+//     };
+//     return counts
+// };
+// console.log(findFrequency(freqArray));
 
 
 
@@ -54,9 +54,6 @@ isPalindrome();
 
 var pairArray = [5, 1, 2, 3, 1, 4];
 
-var pairArray2 = [9, 5, 10, 2, 24, -1, -48]; 
-
-
 let largestPair = function (pairArray) {
     var maxProduct = pairArray[0] * pairArray[1];
     for (let i = 1; i < pairArray.length - 1; i++) {
@@ -76,7 +73,6 @@ console.log(largestPair(pairArray));
 var string = 'ido(not)liketocode';
 
 let removeParenth = function (string) {
-    // string.replaceAll(/(not)/g);
     var parenthArray = string.replace(/\(.*?\)/g, '').split(/\s+/, 5);
     var finString = parenthArray.toString();
     return finString;
