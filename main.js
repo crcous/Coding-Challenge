@@ -1,15 +1,17 @@
-var sumArray = [2, 4, 6];
+// var sumArray = [10, 234, 356, 5, 3, 1, 3, 4];
 
-var findSum = function (sumArray) {
+var findSum = function (array) {
 let sum = 0
-for (let i = 0; i < sumArray.length; i++) {
-    sum += sumArray[i];
+for (let i = 0; i < array.length; i++) {
+    sum += array[i];
 };
-    return sum
+// console.log(sum);
+return sum
 };
 
+findSum([10, 234, 356, 5, 3, 1, 3, 4]);
 
-console.log(findSum(sumArray));
+
 
 
 
@@ -36,54 +38,57 @@ console.log(findSum(sumArray));
 
 
 
-var pal = 'dog';
-var palReverse = pal.split('').reverse().join('');
 
-var isPalindrome = function () {
-    if (pal === palReverse) {
-        console.log('true');
+var isPalindrome = function (str) {
+    var palReverse = str.split('').reverse().join('');
+    if (str === palReverse) {
+        // console.log('true');
         return 'true'
     } else if (pal !== palReverse) {
-        console.log('false');
+        // console.log('false');
         return 'false'
     } 
 };
 
-isPalindrome();
+isPalindrome('ana');
 
 
-var pairArray = [5, 1, 2, 3, 1, 4];
-
-let largestPair = function (pairArray) {
-    var maxProduct = pairArray[0] * pairArray[1];
-    for (let i = 1; i < pairArray.length - 1; i++) {
-        product = pairArray[i] * pairArray[i + 1];
+// var pairArray = [234, 32, 15, 344, 15, 34, 134, 2];
+ 
+let largestPair = function (array) {
+    var maxProduct = array[0] * array[1];
+    for (let i = 1; i < array.length - 1; i++) {
+        product = array[i] * array[i + 1];
         if (product > maxProduct) {
             maxProduct = product;
         }
     };
+    // console.log(maxProduct)
     return maxProduct;
 };
-console.log(largestPair(pairArray)); 
+largestPair([234, 32, 15, 344, 15, 34, 134, 2]); 
 
 
 
 
 
-var string = 'ido(not)liketocode';
+var string = 'i(donot)wanttobeadeveloper';
 
-let removeParenth = function (string) {
-    var parenthArray = string.replace(/\(.*?\)/g, '').split(/\s+/, 5);
+let removeParenth = function (str) {
+    var parenthArray = str.replace(/\(.*?\)/g, '').split(/\s+/, 5);
     var finString = parenthArray.toString();
+    // console.log(finString)
     return finString;
 }
 
-console.log(removeParenth(string));
+removeParenth('i(donot)wanttobeadeveloper');
 
 
 
-var scrabbleWord = 'quiet';
-var word = scrabbleWord.split('');
+// var scrabbleWord = 'caziques';
+
+let scoreScrabble = function (str) {
+    var word = scrabbleWord.split('');
 let newAlphabet = { a: '1',
   e: '1',
   i: '1',
@@ -110,7 +115,6 @@ let newAlphabet = { a: '1',
   x: '8',
   q: '10',
   z: '10' }
-let scoreScrabble = function (scrabbleWord) {
     let sum = 0
     let i = 0
     let score = 0
@@ -118,7 +122,8 @@ for (i = 0; i < word.length; i++) {
     letter = word[i];
     sum += parseInt(newAlphabet[letter]);
 }
+// console.log(sum*1);
 return (sum*1);
 }
 
-console.log(scoreScrabble(scrabbleWord));
+scoreScrabble('caziques');
