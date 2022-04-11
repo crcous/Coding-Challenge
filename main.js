@@ -19,22 +19,19 @@ return sum
 // var freqArray = ['a', 'b', 'c', 'a', 'b', 'c', 'a', 'a', 'd'];
 
 
-// findFrequency = function (freqArray) {
-// const counts = {};
+findFrequency = function (freqArray) {
+const counts = {};
 
-//     for (const num of freqArray) {
-//     counts[num] = counts[num] ? counts[num] + 1 : 1
-//     };
-    
-//     var most = property
-//     var least = property
+    for (const num of freqArray) {
+    counts[num] = counts[num] ? counts[num] + 1 : 1
+    };
 
 //     for (const property in counts) {
       
 //     };
-//     return counts
-// };
-// console.log(findFrequency(freqArray));
+    return counts
+};
+
 
 
 
@@ -44,7 +41,7 @@ var isPalindrome = function (str) {
     if (str === palReverse) {
         // console.log('true');
         return 'true'
-    } else if (pal !== palReverse) {
+    } else if (str !== palReverse) {
         // console.log('false');
         return 'false'
     } 
